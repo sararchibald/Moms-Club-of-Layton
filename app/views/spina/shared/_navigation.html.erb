@@ -1,0 +1,7 @@
+<% pages = current_user.present? ? Spina::Page.active : Spina::Page.live %>
+<% menu = Spina::Pages::MenuPresenter.new(pages.in_menu.arrange(order: :position), self, @page) %>
+<nav class="purple lighten-4">
+  <a href="#" class="brand-logo black-text darken-4">MOM's Club of Layton</a>
+
+  <%= menu.to_html %>
+</nav>
