@@ -6,3 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Spina::User.create(name:'Sara',email:'sararchibald@gmail.com',password:'Superman1',password_confirmation:'Superman1',admin:true)
+Spina::Account.create(name: 'Sara')
